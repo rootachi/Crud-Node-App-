@@ -1,0 +1,33 @@
+<%- include("./base/header.ejs") %>
+
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">ToDo App</a>
+    </div>
+</nav>
+
+<div class="container mt-5">
+  
+
+    <form action="/todo/add/ToDo" method="post" class="d-flex">
+
+       
+        <input type="text" name="task" class="form-control" placeholder="Enter ToDo" required>
+       
+        <input type="submit" value="Add ToDo" class="btn btn-md btn-primary mx-2">
+
+      
+
+      
+    </form>
+
+   
+    <ul style="margin-top: 20px;" mx-5>
+        <% todos.forEach(todo => { %>
+            <li><%= todo.task %></li>
+        <% }) %>
+    </ul>
+    
+</div>
+
+<%- include("./base/footer.ejs") %>

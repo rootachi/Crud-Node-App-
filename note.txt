@@ -1,0 +1,21 @@
+
+    <ul class="list-group my-5">
+        <% todos.forEach(todo => { %> 
+            <li class="list-group-item"><%= todo.task %></li> 
+        <% }) %>
+
+
+
+
+        Controller (making) in API 
+
+        create a new project based on user authentication using jwt token 
+        (user register,user login, user logout) 
+
+
+        localhost:3000/login 
+        localhost:3000/register
+        localhost:3000/logout
+        localhost:3000/
+
+        use controller ()
